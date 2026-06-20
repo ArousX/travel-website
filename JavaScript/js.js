@@ -8,10 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
+    const baseUrl = 'https://raw.githubusercontent.com/ArousX/travel-website/main/img/';
     const slides = [
-        { img: 'url("img/' + encodeURIComponent('图1.jpg') + '")', title: '山水如画', desc: '探索葵潭的自然之美' },
-        { img: 'url("img/' + encodeURIComponent('图2.jpg') + '")', title: '古韵悠长', desc: '感受千年的文化底蕴' },
-        { img: 'url("img/' + encodeURIComponent('图3.webp') + '")', title: '味蕾盛宴', desc: '品味地道的葵潭味道' }
+        { img: 'url("' + baseUrl + '图1.jpg")', title: '山水如画', desc: '探索葵潭的自然之美' },
+        { img: 'url("' + baseUrl + '图2.jpg")', title: '古韵悠长', desc: '感受千年的文化底蕴' },
+        { img: 'url("' + baseUrl + '图3.webp")', title: '味蕾盛宴', desc: '品味地道的葵潭味道' }
     ];
 
     let current = 0;
