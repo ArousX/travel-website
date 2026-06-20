@@ -1,18 +1,25 @@
-const banner = document.getElementById('banner');
-const title = document.querySelector('.img_font1');
-const desc = document.querySelector('.img_font2');
+document.addEventListener('DOMContentLoaded', function() {
+    const banner = document.getElementById('banner');
+    const title = document.querySelector('.img_font1');
+    const desc = document.querySelector('.img_font2');
 
-const slides = [
-    { img: 'url("img/图1.jpg")', title: '山水如画', desc: '探索葵潭的自然之美' },
-    { img: 'url("img/图2.jpg")', title: '古韵悠长', desc: '感受千年的文化底蕴' },
-    { img: 'url("img/图3.webp")', title: '味蕾盛宴', desc: '品味地道的葵潭味道' }
-];
+    if (!banner || !title || !desc) {
+        console.error('元素未找到');
+        return;
+    }
 
-let current = 0;
+    const slides = [
+        { img: 'url("img/图1.jpg")', title: '山水如画', desc: '探索葵潭的自然之美' },
+        { img: 'url("img/图2.jpg")', title: '古韵悠长', desc: '感受千年的文化底蕴' },
+        { img: 'url("img/图3.webp")', title: '味蕾盛宴', desc: '品味地道的葵潭味道' }
+    ];
 
-setInterval(() => {
-    current = (current + 1) % slides.length;
-    banner.style.backgroundImage = slides[current].img;
-    title.textContent = slides[current].title;
-    desc.textContent = slides[current].desc;
-}, 3000);
+    let current = 0;
+
+    setInterval(() => {
+        current = (current + 1) % slides.length;
+        banner.style.backgroundImage = slides[current].img;
+        title.textContent = slides[current].title;
+        desc.textContent = slides[current].desc;
+    }, 3000);
+});
