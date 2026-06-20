@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     const slides = [
-        { img: 'url("../img/图1.jpg")', title: '山水如画', desc: '探索葵潭的自然之美' },
-        { img: 'url("../img/图2.jpg")', title: '古韵悠长', desc: '感受千年的文化底蕴' },
-        { img: 'url("../img/图3.webp")', title: '味蕾盛宴', desc: '品味地道的葵潭味道' }
+        { img: 'url("img/图1.jpg")', title: '山水如画', desc: '探索葵潭的自然之美' },
+        { img: 'url("img/图2.jpg")', title: '古韵悠长', desc: '感受千年的文化底蕴' },
+        { img: 'url("img/图3.webp")', title: '味蕾盛宴', desc: '品味地道的葵潭味道' }
     ];
 
     let current = 0;
