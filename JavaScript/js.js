@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { img: 'url("img/图3.webp")', title: '味蕾盛宴', desc: '品味地道的葵潭味道' }
     ];
 
-    // 预加载图片
+    
     let loadedCount = 0;
     slides.forEach((slide) => {
         const img = new Image();
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         desc.textContent = slides[current].desc;
     }
 
-    // 等待所有图片加载完成后再开始轮播
+    
     function startCarousel() {
         if (loadedCount >= slides.length) {
             console.log('所有图片加载完成，开始轮播');
@@ -49,6 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // 延迟1秒后开始检查
+    
     setTimeout(startCarousel, 1000);
 });
