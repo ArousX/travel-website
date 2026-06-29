@@ -127,7 +127,9 @@ main{
     text-align: center;
     font-size: 28px;
     font-weight: 700;
+    
 }
+
 .fufu{
     color: orange;
 }
@@ -149,6 +151,11 @@ main{
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     line-height: 20px;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
 .card img {
     width: 100%;
